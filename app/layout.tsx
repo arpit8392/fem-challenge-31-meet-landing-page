@@ -21,7 +21,6 @@ export default function RootLayout({
 			<body className={`${red_hat_display.className} bg-neutral-50`}>
 				<Header />
 				{children}
-				<Footer />
 			</body>
 		</html>
 	)

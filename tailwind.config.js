@@ -17,6 +17,11 @@ module.exports = {
 				skyBlue: '#71C0D4',
 				pastelPurple: '#B18BDD',
 			},
+			backgroundImage: {
+				footerDesktop: 'url("/assets/desktop/image-footer.jpg")',
+				footerMobile: 'url("/assets/mobile/image-footer.jpg")',
+				footerTablet: 'url("/assets/tablet/image-footer.jpg")',
+			},
 		},
 	},
 	plugins: [],
