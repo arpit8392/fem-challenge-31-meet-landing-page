@@ -6,8 +6,8 @@ import HeroDesktopRight from '@/public/assets/desktop/image-hero-right.png'
 
 const Hero = () => {
 	return (
-		<section className='grid grid-cols-1 gap-12 md:gap-[72px] lg:grid-cols-3 lg:gap-[88px] '>
-			<picture>
+		<section className='grid grid-cols-1 gap-12 md:gap-[72px] lg:grid-cols-3 lg:gap-0'>
+			<picture className='lg:justify-self-start'>
 				<Image
 					src={HeroMobile}
 					alt=''
@@ -16,15 +16,15 @@ const Hero = () => {
 				<Image
 					src={HeroDesktopLeft}
 					alt=''
-					className='hidden w-full object-contain lg:block'
+					className='hidden lg:block'
 				/>
 			</picture>
-			<div className='flex flex-col items-center justify-center gap-8 px-6 text-center'>
+			<div className='flex flex-col items-center justify-center gap-8 px-6 text-center lg:px-0'>
 				<div className='flex flex-col gap-6 lg:gap-8'>
 					<h1 className='text-[40px] font-black leading-10 text-darkBlue md:text-5xl lg:text-[64px]'>
 						Group Chat <br /> for Everyone
 					</h1>
-					<p className='max-w-sm font-medium leading-relaxed text-slateGray md:text-lg'>
+					<p className='max-w-sm font-medium text-slateGray md:max-w-lg md:text-lg '>
 						Meet makes it easy to connect with others face-to-face virtually and
 						collaborate across any device.
 					</p>
@@ -42,12 +42,8 @@ const Hero = () => {
 					</Link>
 				</div>
 			</div>
-			<picture>
-				<Image
-					src={HeroDesktopRight}
-					alt=''
-					className='hidden w-full object-contain lg:block'
-				/>
+			<picture className='lg:justify-self-end'>
+				<Image src={HeroDesktopRight} alt='' className='hidden lg:block' />
 			</picture>
 		</section>
 	)
